@@ -1,13 +1,21 @@
 {
   "name": "voxy",
   "version": "0.1.0",
-  "private": true,
+  "description": "A Vue.js forms component library",
+  "keywords": [ "vue", "forms" ],
+  "main": "dist/rsvuep.min.js",
+  "author": "tessa",
+  "license": "LGPL-3.0-only",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:umd": "vue-cli-service build --target lib --name rsvuep [entry]",
+    "build:wc:multi": "vue-cli-service build --target wc --name rsvuep 'src/components/*.vue'",
+    "build:wc:async": "vue-cli-service build --target wc-async --name rsvuep 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -28,10 +36,50 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "array-element-newline": [
+        "error",
+        "never"
+      ],
+      "block-spacing": "error",
+      "comma-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "args": "after-used",
+          "argsIgnorePattern": "^_$"
+        }
+      ],
+      "prefer-const": [
+        "error",
+        {
+          "destructuring": "any",
+          "ignoreReadBeforeAssign": false
+        }
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "postcss": {
     "plugins": {
