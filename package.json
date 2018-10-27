@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "description": "A Vue.js forms component library",
   "keywords": [ "vue", "forms" ],
-  "main": "dist/rsvuep.min.js",
+  "main": "dist/voxy.min.js",
   "author": "tessa",
   "license": "LGPL-3.0-only",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:umd": "vue-cli-service build --target lib --name rsvuep [entry]",
-    "build:wc:multi": "vue-cli-service build --target wc --name rsvuep 'src/components/*.vue'",
-    "build:wc:async": "vue-cli-service build --target wc-async --name rsvuep 'src/components/*.vue'",
+    "build:umd": "vue-cli-service build --target lib --name voxy",
+    "build:wc:multi": "vue-cli-service build --target wc --name voxy 'src/components/*.vue'",
+    "build:wc:async": "vue-cli-service build --target wc-async --name voxy 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
