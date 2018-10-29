@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:umd": "vue-cli-service build --target lib --name voxy",
+    "build:umd": "vue-cli-service build --target lib --name voxy 'src/buildscript.js'",
     "build:wc:multi": "vue-cli-service build --target wc --name voxy 'src/components/*.vue'",
     "build:wc:async": "vue-cli-service build --target wc-async --name voxy 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
