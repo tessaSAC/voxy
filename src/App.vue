@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import SpeakerCard from "./components/SpeakerCard.vue";
+// import SpeakerCard from "./components/SpeakerCard.vue";
 
 export default {
   name: "app",
 
   components: {
-    SpeakerCard
+    // SpeakerCard
   },
 
   data: _ => ({
